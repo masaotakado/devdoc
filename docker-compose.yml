@@ -17,7 +17,7 @@ services:
       - ./init.d:/docker-entrypoint-initdb.d
 
   php:
-    container_name: dev-php
+    container_name: dev-web
     build: ./web
     ports:
       - "80:80"
